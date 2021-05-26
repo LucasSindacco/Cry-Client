@@ -1,0 +1,282 @@
+body {
+    background: #303030;
+}
+
+#left-dash {
+    width: 30%;
+    height: 100vh;
+    background: #363636;
+    position: relative;
+}
+
+#left-dash .dash-user {
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+#left-dash .home {
+    text-align: right;
+}
+
+#left-dash .home i {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: .80rem;
+    background: linear-gradient(to left, #bf8eff, #9856ED);
+    cursor: pointer;
+    border-radius: 50px;
+    margin: .5rem;
+    animation: change 3s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background: #bf8eff;
+        background-position: 0 50%;
+    }
+    50% {
+        background: #9856ED;
+        background-position: 100% 50%;
+    }
+    100% {
+        background: #bf8eff;
+        background-position: 0 50%;
+    }
+}
+
+#left-dash .dash-user img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    margin-right: 2rem;
+    box-shadow: 0 0 20px 1px #9856ed33;
+}
+
+#left-dash .dash-user h1 {
+    color: #fff;
+    font-weight: 450;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+#left-dash .dash-user h1:hover {
+    transition: ease-in-out .3s;
+    color: #9856ED;
+}
+
+#left-dash .dash-user h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    animation: change 2s ease-in-out infinite;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    bottom: -2px;
+    border-radius: 70rem;
+}
+
+#left-dash .dash-comments {
+    padding: 1rem;
+    text-align: left;
+}
+
+#left-dash .dash-comments .title-comments h1 {
+    color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+#left-dash .dash-comments .box-comments {
+    background: #303030;
+    padding: 1rem;
+    border-radius: .15rem;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+#left-dash .dash-comments .box-comments h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin-bottom: .5rem;
+}
+
+#left-dash .dash-comments .box-comments p {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: .9rem;
+    font-weight: 350;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#left-dash .dash-comments .box-comments .date {
+    text-align: right;
+}
+
+#left-dash .dash-comments .box-comments .date h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* CSS RIGHT DASH */
+
+#right-dash {
+    width: 70%;
+    height: 100vh;
+    background: transparent;
+}
+
+#right-dash .box-join {
+    width: 70;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    background: #363636;
+    margin: 1rem;
+}
+
+#right-dash .box-join i {
+    color: #fff;
+    font-size: 1.9rem;
+    margin-right: 1.5rem;
+    animation: change 2s ease-in-out infinite;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    box-shadow: 0 0 15px 3px rgb(152, 86, 237, 0.50);
+    padding: .80rem;
+    border-radius: 50px;
+}
+
+#right-dash .box-join a {
+    text-decoration: none;
+}
+
+#right-dash .box-join h2 {
+    color: #fff;
+    font-weight: bold;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+
+#right-dash .box-join h2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    animation: change 2s ease-in-out infinite;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    bottom: -1rem;
+    border-radius: 70rem;
+}
+
+#right-dash .box-join h2:hover {
+    color: rgb(255, 255, 255, 0.8);
+}
+
+
+/* CSS BOX ABOUT */
+
+#right-dash .box-about {
+    width: 70;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+#right-dash .box-about .content-about {
+    text-align: center;
+    width: 35rem;
+    margin: 1rem;
+    background: #363636;
+    padding: 5rem;
+    box-shadow: 0 0 15px 1px #00000040;
+    position: relative;
+    border-top-left-radius: .15rem;
+    border-top-right-radius: .15rem;
+}
+
+#right-dash .box-about .content-about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+    height: 15px;
+    animation: change 2s ease-in-out infinite;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    left: 0;
+}
+
+#right-dash .box-about .content-about i {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    border-radius: 50px;
+    box-shadow: 0 0 15px 3px rgb(152, 86, 237, 0.50);
+}
+
+#right-dash .box-about .content-about h2 {
+    color: #fff;
+    font-weight: 450;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#right-dash .box-about .content-about .btn-about {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: .50rem 2rem;
+    transition: ease-in-out .3s;
+    animation: change 2s ease-in-out infinite;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    border-radius: 70rem;
+}
+
+#right-dash .box-about .content-about .btn-about:hover {
+    margin-left: 2rem;
+    transition: ease-in-out .3s;
+}
+
+#right-dash .title-developed {
+    text-align: center;
+}
+
+#right-dash .title-developed h3 {
+    color: #fff;
+    font-weight: 450;
+    font-size: 1.3rem;
+}
+
+#right-dash .title-developed a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: .5rem;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+
+#right-dash .title-developed a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0px;
+    background: linear-gradient(to left, #9856ED, #bf8eff);
+    border-radius: 70rem;
+}
+
+#right-dash .title-developed a:hover {
+    margin-left: 2rem;
+    transition: ease-in-out .3s;
+}
